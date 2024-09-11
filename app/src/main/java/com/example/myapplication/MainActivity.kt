@@ -22,9 +22,9 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-/* *
+/* * Afficher une liste avec recyclerView (il recycle les info pour afficher uniquement ce qu'il doit afficher)
 adapter : -olympianadapter
-- olympianViewHolder
+- olympianViewHolder (pour bind automatiquement image, name et desc
 
 
 
@@ -41,4 +41,6 @@ values : strings.xml
 
 
 layout : pantheon.xml
+
+//https://developer.android.com/codelabs/basic-android-kotlin-training-recyclerview-scrollable-list?hl=fr#0
 * */
