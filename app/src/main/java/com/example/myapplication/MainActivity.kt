@@ -28,23 +28,16 @@ class MainActivity : ComponentActivity() {
 }
 
 
+
 /* * Afficher une liste avec recyclerView (il recycle les info pour afficher uniquement ce qu'il doit afficher)
 adapter : -olympianadapter
 - olympianViewHolder (pour bind automatiquement image, name et desc
 
-
-
 model : class Olympian
-
-
 
 data: Pantheon
 
-
-
 values : strings.xml
-
-
 
 layout : pantheon.xml
 

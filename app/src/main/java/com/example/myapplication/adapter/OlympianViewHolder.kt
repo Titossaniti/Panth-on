@@ -4,6 +4,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.myapplication.R
 import com.example.myapplication.model.Olympian
 
@@ -15,6 +16,8 @@ class OlympianViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(olympian: Olympian) {
         nameTextView.text = olympian.name
         descTextView.text = olympian.description
-        imageView.setImageResource(olympian.imageResId)
+        Glide.with(itemView.context)
+            .load(olympian.imageResId)
+            .into(imageView)
     }
 }
